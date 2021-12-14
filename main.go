@@ -17,15 +17,17 @@ func main() {
 		log.Fatal("$PORT must be set")
 	}
 
+	addr := fmt.Sprintf(":%s", port)
+
 	r := mux.NewRouter()
 	initHandler(r)
 	srv := &http.Server{
 		Handler:      r,
-		Addr:         port,
+		Addr:         addr,
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
 	}
-	log.Println(fmt.Sprintf("server running at : %s", port))
+	log.Println(fmt.Sprintf("server running at : %s", addr))
 	log.Fatal(srv.ListenAndServe())
 }
 
