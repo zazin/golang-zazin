@@ -1,0 +1,19 @@
+# github.com/bxcodec/faker/v3 v3.6.0
+## explicit
+github.com/bxcodec/faker/v3
+github.com/bxcodec/faker/v3/support/slice
+# github.com/gorilla/mux v1.8.0
+## explicit
+github.com/gorilla/mux
+# github.com/jinzhu/inflection v1.0.0
+github.com/jinzhu/inflection
+# github.com/jinzhu/now v1.1.4
+## explicit
+github.com/jinzhu/now
+# gorm.io/gorm v1.22.4
+## explicit
+gorm.io/gorm
+gorm.io/gorm/clause
+gorm.io/gorm/logger
+gorm.io/gorm/schema
+gorm.io/gorm/utils
