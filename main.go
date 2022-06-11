@@ -15,7 +15,7 @@ func main() {
 	port := os.Getenv("PORT")
 
 	if port == "" {
-		log.Fatal("$PORT must be set x")
+		log.Fatal("$PORT must be set y")
 	}
 
 	addr := fmt.Sprintf(":%s", port)
