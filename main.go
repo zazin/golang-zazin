@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gorilla/mux"
+	"golang-zazin/internal/delivery/http/stub_handler"
 	"golang-zazin/internal/delivery/http/user_handler"
 	"log"
 	"net/http"
@@ -33,4 +34,5 @@ func main() {
 
 func initHandler(router *mux.Router) {
 	user_handler.UserHandler(router)
+	stub_handler.StubHandler(router)
 }
