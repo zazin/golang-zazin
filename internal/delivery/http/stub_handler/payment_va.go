@@ -41,7 +41,7 @@ func (h *stubHandler) SubmitPayment(w http.ResponseWriter, r *http.Request) {
 			DeeplinkUrl:  "",
 			CheckoutUrl:  "",
 			QrUrl:        "",
-			PaymentCode:  fmt.Sprintf("%v", faker.RandomUnixTime()),
+			PaymentCode:  fmt.Sprintf("100000%v", faker.RandomUnixTime()),
 		},
 		Id: faker.UUIDDigit(),
 	})
