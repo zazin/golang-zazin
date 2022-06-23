@@ -36,7 +36,7 @@ func (h *stubHandler) SubmitPayment(w http.ResponseWriter, r *http.Request) {
 			QrUrl        string `json:"qr_url"`
 			PaymentCode  string `json:"payment_code"`
 		}{
-			ResponseCode: "00",
+			ResponseCode: "201",
 			ResponseDesc: "Success",
 			DeeplinkUrl:  "",
 			CheckoutUrl:  "",
